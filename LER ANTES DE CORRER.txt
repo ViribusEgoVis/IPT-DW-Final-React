@@ -1,0 +1,30 @@
+├───public
+│   - Este diretório é geralmente destinado a conter ficheiros que são acessíveis publicamente na aplicação web.
+│     Pode incluir o favicon (favicon.ico) e o ficheiro HTML principal (index.html).
+│
+└───src
+    ├───assets
+    │   - Este diretório armazena recursos estáticos, como imagens, ícones ou outros ficheiros necessários para a interface gráfica da aplicação.
+    │
+    ├───components
+    │   - Contém componentes reutilizáveis que podem ser utilizados em diferentes partes do projeto. Exemplos podem incluir elementos de interface, como botões, barras de navegação, ou outros elementos visuais.
+    │
+    ├───fonts
+    │   - Armazena fontes utilizadas na aplicação. Fontes personalizadas podem ser adicionadas aqui para estilizar o texto na aplicação.
+    │
+    ├───pages
+    │   ├───login
+    │   │   - Este subdiretório contém componentes e ficheiros relacionados às páginas de autenticação ou login na aplicação.
+    │   │
+    │   ├───quiz
+    │   │   - Contém componentes e ficheiros relacionados à funcionalidade de quizzes na aplicação. Isso pode incluir páginas para criar, editar ou visualizar quizzes.
+    │   │
+    │   └───user
+    │       - Este subdiretório engloba componentes e ficheiros associados à gestão de utilizadores na aplicação, como páginas de perfil ou configurações do utilizador.
+    └───utils
+        ├───QuizService
+        │   - Contém ficheiros ou módulos relacionados à lógica de negócios dos quizzes na aplicação. Pode incluir funções para criar, atualizar ou eliminar quizzes.
+        │
+        └───UserService
+            - Aqui, estão agrupados ficheiros ou módulos relacionados à lógica de negócios associada aos utilizadores na aplicação. Isso pode incluir funcionalidades como atualização de perfil ou gestão de utilizadores.
+
