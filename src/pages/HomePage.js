@@ -32,7 +32,7 @@ const HomePage = () => {
             // Update the implementation based on your backend or data source
             const filteredQuizzes = data.filter((quiz) =>
                 quiz.title.toLowerCase().includes(search.toLowerCase()) ||
-                quiz.desc.toLowerCase().includes(search.toLowerCase())
+                quiz.description.toLowerCase().includes(search.toLowerCase())
             );
 
             setFiltered(filteredQuizzes);

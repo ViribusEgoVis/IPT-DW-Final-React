@@ -16,8 +16,11 @@ const useFetchFullQuiz = (quiz_id) => {
                 if (quiz_id) {
                     const selectedQuiz = quizzes.find(quiz => quiz.id === parseInt(quiz_id));
                     setData(selectedQuiz);
+                    console.log(selectedQuiz)
+
                 } else {
                     setData(quizzes);
+
                 }
             } catch (error) {
                 console.error("Error fetching quizzes:", error);

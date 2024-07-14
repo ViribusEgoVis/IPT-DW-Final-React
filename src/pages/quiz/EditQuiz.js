@@ -294,7 +294,7 @@ const EditQuiz = () => {
                     <Accordion>
                         {updated_data?.questions.map(question => (
                             <Accordion.Item eventKey={question.id} key={question.id}>
-                                <Accordion.Header>{question.id - 1}</Accordion.Header>
+                                <Accordion.Header>{question.id}</Accordion.Header>
                                 <Accordion.Body>
                                     <Form.Group>
                                         <Form.Label><b>Text</b></Form.Label>
@@ -309,7 +309,7 @@ const EditQuiz = () => {
                                         <Form.Label className={"mt-3"}><b>Splash Image</b></Form.Label>
                                         <Image
                                             className={"shadow quiz- w-100"}
-                                            src={questionImagePreviews[question.id] || (url_base + "/quizzes/" + question.splashImage)}
+                                            src={questionImagePreviews[question.id] || (url_base + "questions/" + question.splashImage)}
                                         />
                                         <Form.Control
                                             ref={el => questionImageInputRefs.current[question.id] = el}
